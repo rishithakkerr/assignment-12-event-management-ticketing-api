@@ -3,6 +3,7 @@
 **Name:** Rishi Thakker
 **Roll No:** 150096725068
 **Cohort:** Sam Altman
+**Deployed Link:** https://assignment-12-event-management-ticketing-a0o8.onrender.com/
 
 Backend for an Event Ticketing & Live Booking system built with **Node.js, Express, Firebase Firestore, JWT Role-Based Access Control (Organizer/Attendee), express-rate-limit, and Swagger/OpenAPI**. Uses Firestore's `runTransaction` so ticket bookings can never oversell an event, even under concurrent requests.
 

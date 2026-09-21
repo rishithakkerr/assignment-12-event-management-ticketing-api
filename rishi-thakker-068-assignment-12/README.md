@@ -14,44 +14,6 @@ Backend for an Event Ticketing & Live Booking system built with **Node.js, Expre
 - Organizer-owns-event checks on update/delete/attendees routes
 - Full interactive Swagger UI at `/api-docs`
 
-## Setup
-
-You need a real Firebase project before this will run — see the credentials step below.
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Drop your Firebase service account key in the project root
-#    (see "Firebase Setup" below)
-
-# 3. Run in dev mode (auto-restart)
-npm run dev
-
-# or run normally
-npm start
-```
-
-Visit `http://localhost:5000/api-docs` for the interactive Swagger docs.
-
-## Firebase Setup
-This API needs a real Firestore database, unlike a Mongo connection string it can't be a single
-hardcoded value — it needs a downloaded credentials file:
-
-1. Go to [console.firebase.google.com](https://console.firebase.google.com) → **Create a project**
-2. **Build → Firestore Database → Create database**
-3. **Project Settings → Service Accounts → Generate new private key** → downloads a JSON file
-4. Save that file as `serviceAccountKey.json` in the project root (already `.gitignore`d — never commit it)
-
-## Authentication
-JWT via a plain `token` header (not `Authorization: Bearer`):
-
-```
-token: <your JWT>
-```
-
-Every account picks a role (`Attendee` or `Organizer`) at registration.
-
 ## API Endpoints
 
 ### Auth
